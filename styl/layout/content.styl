@@ -1,13 +1,14 @@
-body.home section#content
+body.home .section#content
   p:first-of-type
     font-size: 125%
     padding: 0 0 m*2
     margin: 0 0 m*2
     border-bottom: 1px solid #ddd
 
-body.store section#content
+body.store .section#content
   h2
-    font bold 85% serif
+    font bold 75% serif
+    color #666
     text-transform uppercase
     letter-spacing 2px
     margin: 0 0 1em
@@ -35,10 +36,10 @@ body.store section#content
           border-color anchorh
           linear-gradient hsl(hue,100,60), hsl(hue,100,45)
 
-section#content
+.section#content
   cnt()
   padding: 3em 0 5em
-  article
+  .article
     font 16px/1.5 serif
     col 240
     p
@@ -51,7 +52,7 @@ section#content
         padding-right: m*.5
         text-smoothing()
 
-  nav
+  .nav
     col 60
     padding-left: c*60
     ul
