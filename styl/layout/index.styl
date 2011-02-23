@@ -1,0 +1,42 @@
+hue = 12
+hue2 = 200
+
+anchor = hsl(hue2,100,40)
+anchorh = hsl(hue,90,49)
+
+accent = hsl(hue2,100,55)
+
+m = 14px
+txt = #333
+
+default-font(size = m)
+  font m serif
+  line-height 150%
+  color txt
+
+link()
+  color anchor
+  text-decoration none
+  &:hover
+    color anchorh
+a
+  link()
+
+html
+  overflow-y scroll
+
+body
+  default-font()
+  text-shadow #fff 0 1px 0
+  background hsl(hue2,80,30)
+  height 100%
+
+#access
+  display none
+
+#container
+  cnt()
+  margin: 2em auto
+  padding: 0 80px
+  background hsl(60,10,99)
+  box-shadow b40 1px 1px 9px, inset b15 0 0 15px, w25 0 0 150px

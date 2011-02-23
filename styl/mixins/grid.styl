@@ -1,0 +1,22 @@
+width = 100%
+columns = 360
+c = width / columns
+
+clear()
+  &:after
+    clear both
+    display block
+    content ''
+
+cnt()
+  width width
+  max-width 640px
+  margin 0 auto
+  clear()
+
+span(n)
+  width c * n
+
+col(n)
+  span n
+  float left

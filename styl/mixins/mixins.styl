@@ -1,0 +1,92 @@
+serif = Cambria, Georgia, 'serif'
+mono = Consolas, "Lucida Console", Courier New, monospace
+sans = "Helvetica Neue", Arial, Helvetica, sans-serif
+lucida = "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif
+
+inline-block()
+  display -moz-inline-stack
+  display inline-block
+  zoom 1
+
+text-smoothing(style = antialiased)
+  -webkit-font-smoothing style
+
+// backgrounds
+bg(color =  #fff)
+  background color
+
+linear-gradient(a = white, b = black)
+  background -webkit-gradient(linear, left top, left bottom, from(a), to(b))
+  background -moz-linear-gradient(a, b)
+
+bg-radial-gradient(x = center, y = 200, r = 1000, a = white, b = black)
+  background a
+  background -webkit-gradient(radial, x y, 0, x y, r, from(a), to(b))
+  background -moz-radial-gradient(x y+px, circle, a, b)
+
+bg-glow(a = w20, r = 800, b = m240, c = m230)
+  background -webkit-gradient(radial, center top, 0, center top, r, from(a), to(transparent)), -webkit-gradient(linear, left top, left bottom, from(b), to(c))
+
+complex-border(t = w30, r = b15, b = b30, l = w15)
+  border-top 1px solid t
+  border-right 1px solid r
+  border-bottom 1px solid b
+  border-left 1px solid l
+
+border-sides(b)
+  border-left 1px solid b
+  border-right 1px solid b
+
+border-ends(b)
+  border-top 1px solid b
+  border-bottom 1px solid b
+
+border-radius()
+  -moz-border-radius arguments
+  -webkit-border-radius arguments
+  border-radius arguments
+
+transform(t = skew(15deg))
+  transform t
+  -webkit-transform t
+  -moz-transform t
+  -o-transform t
+
+box-shadow()
+  -moz-box-shadow arguments
+  -webkit-box-shadow arguments
+  -o-box-shadow arguments
+  box-shadow arguments
+
+complex-shadow()
+  box-shadow(inset b6 0 0 10px, b27 0 1px 4px)
+  position relative
+  &:after, &:before
+    position absolute
+    bottom 10px
+    background transparent
+    width 70%
+    height 55%
+    content ''
+    box-shadow(b30 0 8px 16px)
+  &:after
+    z-index -1
+    transform(skew(15deg) rotate(6deg))
+    right 10px
+  &:before
+    z-index -2
+    transform(skew(-15deg) rotate(-6deg))
+    left 10px
+
+// transitions
+transition(t = all .15s ease)
+  transition t
+  -webkit-transition t
+  -moz-transition t
+  -o-transition t
+
+transition-duration(d = 0s)
+  transition-duration d
+  -webkit-transition-duration d
+  -moz-transition-duration d
+  -o-transition-duration d
