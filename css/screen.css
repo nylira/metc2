@@ -14,10 +14,10 @@ body{font:14px Cambria,Georgia,"serif";line-height:150%;color:#333;background:#0
 #access{display:none}
 #container{width:100%;max-width:640px;margin:0 auto;margin:2em auto;padding:0 80px;background:#fdfdfc;-moz-box-shadow:rgba(0,0,0,0.4) 1px 1px 9px,inset rgba(0,0,0,0.15) 0 0 15px,rgba(255,255,255,0.25) 0 0 150px;-webkit-box-shadow:rgba(0,0,0,0.4) 1px 1px 9px,inset rgba(0,0,0,0.15) 0 0 15px,rgba(255,255,255,0.25) 0 0 150px;-o-box-shadow:rgba(0,0,0,0.4) 1px 1px 9px,inset rgba(0,0,0,0.15) 0 0 15px,rgba(255,255,255,0.25) 0 0 150px;box-shadow:rgba(0,0,0,0.4) 1px 1px 9px,inset rgba(0,0,0,0.15) 0 0 15px,rgba(255,255,255,0.25) 0 0 150px}
 #container:after{clear:both;display:block;content:""}
-.header.site{border-bottom:3px double #bbb;padding:1em 0 5em;}
+.header.site{border-bottom:3px double #bbb;padding:1em 0 1em;}
 .header.site:after{clear:both;display:block;content:""}
 .header.site h1{width:33.333333333333336%;float:left;}
-.header.site h1 a{font:1.25em Cambria,Georgia,"serif";line-height:70px;text-transform:uppercase;color:#333;padding-left:0 1em}
+.header.site h1 a{padding-top:6em;display:block}
 .header.site .nav.site{width:66.66666666666667%;float:left;}
 .header.site .nav.site ul{float:right;}
 .header.site .nav.site ul li{float:left;}
@@ -38,6 +38,9 @@ body.store .section#content ul.products li.product p.buy a:hover{border-color:#e
 .section#content .nav ul li{border-top:1px solid #ddd;}
 .section#content .nav ul li.inactive a{color:#ddd}
 .section#content .nav ul li a{display:block;padding:0 .5em;line-height:3em}
-.footer.site{width:100%;max-width:640px;margin:0 auto;border-top:3px double #bbb;padding:0 0 3em;}
+.footer.site{width:100%;max-width:640px;margin:0 auto;border-top:3px double #bbb;padding:1em 0 3em;}
 .footer.site:after{clear:both;display:block;content:""}
-.footer.site p{padding:0 1em;line-height:3em;font-size:85%}
+.footer.site ul{padding:0 .5em;}
+.footer.site ul li{float:right;padding:0 .5em;line-height:20px;font-size:85%;}
+.footer.site ul li.copyright{float:left}
+.footer.site ul li.facebook{margin:1px 0}
