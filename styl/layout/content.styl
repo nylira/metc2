@@ -16,14 +16,23 @@ body.store .section#content
     li.product
       h3
         font-size 1.5em
-      img
+      a.img
+        display: block
         border 1px solid #ddd
-        padding 3px
+        padding 2px
         background #fff
         margin: .5em 0
+        &:hover
+          border-color: anchor
+
+      p.price
+        font-size: 1.5em
+        line-height: m*3
+        float: left
 
       p.buy a
         display inline-block
+        float: right
         line-height m*3 - 2px
         color #fff
         text-shadow b30 0 1px 0
