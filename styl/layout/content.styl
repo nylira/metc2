@@ -1,3 +1,9 @@
+body.home li.home a 
+body.store li.store a
+body.about li.about a
+  color txt
+  cursor default
+
 body.home .section#content
   p:first-of-type
     font-size: 125%
@@ -5,34 +11,62 @@ body.home .section#content
     margin: 0 0 m*2
     border-bottom: 1px solid #ddd
 
-body.store .section#content
+.section#content
+  cnt()
+  padding: 3em 0 0
+  .article
+    font 16px/1.5 serif
+    col 240
+
+    .section
+      margin 0 0 5em
+
+    p
+      margin 0 0 m
+     
+      span.drop
+        display: block
+        float: left
+        font: 5.2em/.86 serif
+        padding-right: m*.5
+        text-smoothing()
+
   h2
     font bold 75% serif
     color #666
     text-transform uppercase
     letter-spacing 2px
     margin: 0 0 1em
+
+  h3
+    font-size 1.5em
+    margin 0 0 m
+
   ul.products
     li.product
-      h3
-        font-size 1.5em
+      margin 0 0 5em
+      clear()
+
+      p.desc
+        margin 0 0 1.5em
+
       a.img
         display: block
         border 1px solid #ddd
         padding 2px
         background #fff
-        margin: .5em 0
+        margin: 0 0 1.5em
         &:hover
           border-color: anchor
 
       p.price
         font-size: 1.5em
-        line-height: m*3
-        float: left
+        line-height m*3
+        float right
 
       p.buy a
         display inline-block
-        float: right
+        float left
         line-height m*3 - 2px
         color #fff
         text-shadow b30 0 1px 0
@@ -44,22 +78,6 @@ body.store .section#content
         &:hover
           border-color anchorh
           linear-gradient hsl(hue,100,60), hsl(hue,100,45)
-
-.section#content
-  cnt()
-  padding: 3em 0 5em
-  .article
-    font 16px/1.5 serif
-    col 240
-    p
-      margin 0 0 m
-     
-      span.drop
-        display: block
-        float: left
-        font: 5.2em/.86 serif
-        padding-right: m*.5
-        text-smoothing()
 
   .nav
     col 60
